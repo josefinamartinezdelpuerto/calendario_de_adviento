@@ -1,0 +1,154 @@
+body {
+ background-color: #02080c;
+  padding: 3vh;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center; 
+  margin: auto;
+}
+
+
+.container-wrapper {
+  max-width: 768px;
+  width: 100vw;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18%, 2fr));
+  grid-template-rows: repeat(auto-fit, minmax(18%, 2fr));
+  grid-gap: 15px;
+  grid-auto-flow: dense;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+  height: 90vh;
+}
+
+
+.container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title {
+  grid-row: span 2;
+  grid-column: span 3;
+  color: #7394af;
+  font-size: 5rem;
+}
+
+
+
+.day1,
+.day10,
+.day14,
+.day15,
+.day23 {
+  grid-row: span 2;
+  font-size: 3.6rem;
+}
+
+.day4,
+.day9,
+.day18,
+.day22 {
+  grid-column: span 2;
+  font-size: 3rem;
+}
+
+.day24 {
+  grid-row: span 2;
+  grid-column: span 2;
+  font-size: 5rem;
+}
+
+.day25 {
+  grid-row: span 2;
+  grid-column: span 3;
+  font-size: 7.4rem;
+}
+
+
+.day1 .front,
+.day3 .front,
+.day5 .front,
+.day7 .front,
+.day9 .front,
+.day11 .front,
+.day13 .front,
+.day15 .front,
+.day17 .front,
+.day19 .front,
+.day21 .front,
+.day23 .front,
+.day25 .front {
+  background-color: #061724
+}
+
+
+.container-item {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.tile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.container-item:hover .tile {
+  transform: rotateX(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  --webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+    
+  background-color: #0d2e49;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.back {
+  border-radius: 10px;
+  transform: rotateX(180deg);
+}
+ .img{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    --webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .note-text {
+    background-color: #afb0b1;
+    color: rgb(4, 4, 4);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    resize: none;
+  }
