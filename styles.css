@@ -23,6 +23,7 @@ body {
   grid-auto-rows: 100px;
   grid-auto-columns: 100px;
   height: 90vh;
+
 }
 
 
@@ -37,7 +38,7 @@ body {
   grid-row: span 2;
   grid-column: span 3;
   color: #7394af;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 
@@ -48,7 +49,7 @@ body {
 .day15,
 .day23 {
   grid-row: span 2;
-  font-size: 3.6rem;
+  font-size: 95%;
 }
 
 .day4,
@@ -68,7 +69,7 @@ body {
 .day25 {
   grid-row: span 2;
   grid-column: span 3;
-  font-size: 7.4rem;
+  font-size: 7rem;
 }
 
 
@@ -149,6 +150,6 @@ body {
     padding: 10px;
     border: none;
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 50%;
     resize: none;
   }

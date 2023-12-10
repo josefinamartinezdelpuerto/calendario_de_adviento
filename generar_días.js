@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     backElement.classList.add("back");
     let noteTextArea = document.createElement("textarea");
     noteTextArea.classList.add("note-text");
-    noteTextArea.placeholder = "Escribe tu nota...";
+    noteTextArea.placeholder = "Escribe aquí";
 
     //Apendeo los elementos del bucle y cada dia al container general del calendario
     tileElement.appendChild(frontElement);
